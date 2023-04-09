@@ -1,0 +1,65 @@
+section.content__jobs {
+  background-image: url("../../assets/random-lines/3.svg"),
+    url("../../assets/random-lines/4.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 90%;
+  background-position: 0 10%, 110% 100%;
+}
+
+ul.jobs__list {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2rem;
+}
+
+li.jobs__list__item {
+  width: calc(50% + 1.5px);
+  height: 400px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+li.jobs__list__item.right {
+  justify-content: flex-start;
+  border-left: 3px solid var(--blue-25);
+  align-self: flex-end;
+}
+li.jobs__list__item.right > i {
+  position: absolute;
+  left: -7px;
+}
+li.jobs__list__item.left {
+  justify-content: flex-end;
+
+  border-right: 3px solid var(--blue-25);
+  align-self: flex-start;
+}
+li.jobs__list__item.left > i {
+  position: absolute;
+  right: -9px;
+}
+
+li.jobs__list__item > img,
+li.jobs__list__item > video {
+  height: 360px;
+
+  object-fit: contain;
+}
+
+li.jobs__list__item > p {
+  width: 50%;
+
+  padding: 0 2rem;
+
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: var(--neutral-70);
+}

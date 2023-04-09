@@ -1,0 +1,102 @@
+:root {
+  --neutral-0: #09090b;
+  --neutral-10: #121216;
+  --neutral-20: #25252d;
+  --neutral-30: #49495a;
+  --neutral-40: #5c5c70;
+  --neutral-50: #65657b;
+  --neutral-60: #9a9aac;
+  --neutral-70: #bcbcc8;
+  --neutral-80: #d2d2da;
+  --neutral-90: #f4f4f6;
+  --neutral-100: #ffffff;
+
+  --green-0: #141d0c;
+  --green-25: #1d2b12;
+  --green-50: #60903c;
+  --gren-75: #7eb752;
+  --green-100: #a9cf8c;
+
+  --blue-0: #071f22;
+  --blue-25: #114d55;
+  --blue-50: #28b9cc;
+  --blue-50-50: #28b9ccb2;
+  --blue-75: #4ce4f8;
+  --blue-100: #aae6ee;
+
+  --orange-0: #291300;
+  --orange-25: #7a3900;
+  --orange-50: #ff7f11;
+  --orange-75: #ff9233;
+  --orange-100: #ffd3ad;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--neutral-10);
+}
+
+html {
+  font-size: 81.25%;
+
+  @media screen and (min-width: 640px) {
+    font-size: 87.5%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 93.75%;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+input:focus {
+  outline: 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c4c4c4;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #5a6272;
+}

@@ -1,0 +1,38 @@
+body > header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.25rem;
+
+  background-color: var(--neutral-0);
+  border-bottom: 1px solid var(--neutral-20);
+}
+
+body > header img {
+  width: 3rem;
+}
+
+body > header nav,
+body > header div {
+  flex: 1;
+  text-align: center;
+}
+
+body > header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+body > header nav ul li {
+  color: var(--neutral-90);
+  font-size: 1.125rem;
+}
+body > header nav ul li:hover {
+  color: var(--blue-75);
+  cursor: pointer;
+  transition: 0.4s;
+}

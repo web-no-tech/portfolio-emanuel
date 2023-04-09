@@ -1,0 +1,94 @@
+section.content__about-me {
+  height: 40rem;
+
+  background-color: var(--neutral-0);
+
+  display: flex;
+}
+
+div.about-me__column--left {
+  height: 100%;
+
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  background-color: var(--neutral-0);
+}
+
+div.about-me__column--left > img {
+  width: 125%;
+
+  position: absolute;
+  left: 0;
+
+  z-index: 99;
+}
+
+div.about-me__column--right {
+  width: 100%;
+  height: 100%;
+
+  flex: 1.5;
+
+  position: relative;
+
+  background-color: #fff;
+
+  clip-path: circle(100% at 80% 50%);
+
+  background-image: url("../../assets/images/horizontal-person2.jpeg"),
+    url("../../assets/images/vertical-person2.jpeg");
+  background-position: 95% 0%, 25% 100%;
+  background-size: 30%, 15%;
+  background-repeat: no-repeat;
+}
+
+div.column--right__filter-blue {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  z-index: 9;
+
+  background-color: var(--blue-50-50);
+}
+
+div.column--right__content {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+
+  z-index: 999;
+}
+
+div.column--right__content > h2 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-size: 6rem;
+  line-height: 5.75rem;
+  text-align: center;
+  color: var(--neutral-90);
+
+  rotate: -10deg;
+
+  margin-left: 7.5rem;
+}
+
+div.column--right__content > p {
+  width: 45%;
+
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: var(--neutral-100);
+
+  margin-right: 5%;
+}

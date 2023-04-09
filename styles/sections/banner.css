@@ -1,0 +1,84 @@
+section.content__banner {
+  width: 100%;
+  height: calc(100vh - 4rem);
+
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 0 8rem;
+
+  background-image: url("../../assets/images/blurred-background-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img.banner__stain {
+  z-index: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+img.banner__person {
+  height: 90%;
+
+  z-index: 1;
+
+  box-shadow: #0000004d 0px 0px 12px 4px;
+}
+
+div.banner__text {
+  max-width: 45%;
+
+  z-index: 1;
+
+  margin-left: 8rem;
+}
+
+div.banner__text h2.text__title {
+  font-size: 3.75rem;
+  line-height: 4.75rem;
+  color: var(--blue-75);
+
+  text-shadow: #0000008f 0px 0px 2px;
+
+  margin-bottom: 1.5rem;
+}
+
+div.banner__text h2.text__title span {
+  font-size: 5.75rem;
+  color: var(--neutral-100);
+}
+
+div.banner__text p.text__content {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--neutral-100);
+
+  margin-bottom: 2rem;
+}
+
+div.banner__text button.text__button {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--neutral-0);
+
+  background-color: var(--blue-75);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+}
+
+div.banner__text button.text__button:hover {
+  background-color: var(--blue-100);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 920px) {
+  section.content__banner {
+    padding: 0 4rem;
+  }
+}

@@ -1,0 +1,16 @@
+div.clients__carousel {
+  width: 100%;
+
+  margin: 2rem 0;
+}
+div.clients__carousel > div {
+  width: 12rem;
+  height: 12rem;
+}
+
+div.clients__carousel > div > img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: contain;
+}
