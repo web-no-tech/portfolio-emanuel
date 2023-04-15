@@ -36,3 +36,9 @@ body > header nav ul li:hover {
   cursor: pointer;
   transition: 0.4s;
 }
+
+@media screen and (max-width: 680px) {
+  body > header nav {
+    display: none;
+  }
+}

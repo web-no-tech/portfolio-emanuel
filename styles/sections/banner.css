@@ -81,4 +81,28 @@ div.banner__text button.text__button:hover {
   section.content__banner {
     padding: 0 4rem;
   }
+
+  div.banner__text {
+    max-width: 50%;
+    margin-left: 4rem;
+  }
+
+  img.banner__person {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  section.content__banner {
+    height: auto;
+    padding: 4rem;
+  }
+  div.banner__text {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  img.banner__person {
+    display: none;
+  }
 }

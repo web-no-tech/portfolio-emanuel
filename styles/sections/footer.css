@@ -44,3 +44,17 @@ body > footer > div > div {
 body > footer img {
   width: 6rem;
 }
+
+@media screen and (max-width: 720px) {
+  body > footer > div > div.desktop {
+    display: none;
+  }
+
+  body > footer > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem 1.5rem;
+  }
+}

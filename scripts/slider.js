@@ -31,6 +31,19 @@ const slider = new KeenSlider(
   "#keen-slider-container",
   {
     loop: true,
+
+    breakpoints: {
+      "(min-width: 250px)": {
+        slides: { perView: 1, spacing: 5 },
+      },
+      "(min-width: 680px)": {
+        slides: { perView: 2, spacing: 5 },
+      },
+      "(min-width: 920px)": {
+        slides: { perView: 3, spacing: 10 },
+      },
+    },
+
     slides: {
       perView: 3,
       spacing: 15,
