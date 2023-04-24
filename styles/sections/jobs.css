@@ -24,11 +24,11 @@ li.jobs__list__item {
 
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 
 li.jobs__list__item.right {
-  justify-content: flex-start;
   border-left: 3px solid var(--blue-25);
   align-self: flex-end;
 }
@@ -37,8 +37,6 @@ li.jobs__list__item.right > i {
   left: -7px;
 }
 li.jobs__list__item.left {
-  justify-content: flex-end;
-
   border-right: 3px solid var(--blue-25);
   align-self: flex-start;
 }
@@ -54,16 +52,6 @@ li.jobs__list__item > video {
   object-fit: contain;
 }
 
-li.jobs__list__item > p {
-  width: 50%;
-
-  padding: 0 2rem;
-
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: var(--neutral-70);
-}
-
 @media screen and (max-width: 980px) {
   li.jobs__list__item {
     width: 100%;
@@ -76,7 +64,6 @@ li.jobs__list__item > p {
 
   li.jobs__list__item.left {
     flex-direction: row-reverse;
-    justify-content: flex-end;
     border-left: 3px solid var(--blue-25);
     border-right: none;
     align-self: flex-start;
@@ -102,11 +89,6 @@ li.jobs__list__item > p {
     flex-direction: column;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-  li.jobs__list__item > p {
-    width: 100%;
-    padding: 0;
-    text-align: justify;
   }
 
   li.jobs__list__item.right {
